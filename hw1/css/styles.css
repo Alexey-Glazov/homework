@@ -1,27 +1,127 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #e69e6e, #6a82ec);
+    color: white;
+}
+h1{
+    font-family: 'open sans condenced', sans-serif; 
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: silver;
 }
 .wrapper{
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
     max-width: 1300px;
+    /*border: 1px solid red;*/
+    border-radius: 20px;
+    background: rgba(39, 38, 38, 0.8);
 }
 .container{
     display: flex;
     flex-direction: raw;
+    /*border: 1px solid green;*/
 }
 #intro{
     flex-direction: column;
+    /*border: 1px solid yellow;*/
 }
 img{
     width: 200px;
     height: auto;
     margin-right: 20px;
-    border: 2px solid black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+img:hover{
+    transform: rotate(720deg);
+    transition: transform 1s linear;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .4s linear;
+}
+a:hover{
+    background: #fcac45;
+    color: black;
+    transition: background color .4s linear;
+}
+input, select{
+    box-sizing: border-box;
+    border: none; 
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+.checkbox{
+    position: relative;
+}
+.checkbox_input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.chk_label{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.chk_label:before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid silver;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.chk_label:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    background: url(../images/checked.png) no-repeat;
+    background-size: 14px 14px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;  
+}
+.checkbox_input:checked + .chk_label:after{
+    opacity: 1;
+}
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px; 
+    background: #4488bb;
+    color: #ffffff;
+    transition: .4s;
+}
+.button:hover{
+    background: #fcac45;
+    color: black;
+    transition: background color .4s linear;
 }
 table{
-    border: 2px solid black;
+    border: none;
+}
+td, th {
+ padding: 3px;
+ border: none; 
+}
+tr:hover, td:hover{
+    background: #fcac45;
+    color: black;
+    transition: background color .4s linear;  
 }
