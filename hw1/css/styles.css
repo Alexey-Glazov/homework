@@ -58,6 +58,9 @@ input, select{
     padding: 10px;
     font-size: 13px;
 }
+input:focus, select:focus{
+outline: none;
+}
 .checkbox{
     position: relative;
 }
