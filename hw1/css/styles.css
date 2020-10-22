@@ -1,7 +1,21 @@
 body{
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
     font-family: 'Open Sans', sans-serif;
+=======
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #fc8f46, #6a82ec);
+    color: white;
+    min-height: 100vh;
+}
+h1{
+    font-family: 'open sans condenced', sans-serif; 
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: silver;
+>>>>>>> Stashed changes
 }
 .wrapper{
     margin: 0 auto;
@@ -20,7 +34,91 @@ img{
     width: 200px;
     height: auto;
     margin-right: 20px;
+<<<<<<< Updated upstream
     border: 2px solid black;
+=======
+    border: 2px solid white;
+    border-radius: 10px;
+}
+img:hover{
+    transform: rotate(720deg);
+    transition: transform 1s linear;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .4s linear;
+}
+a:hover{
+    background: #fcac45;
+    color: black;
+    transition: background color .4s linear;
+}
+input, select{
+    box-sizing: border-box;
+    border: none; 
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+input:focus, select:focus{
+outline: none;
+}
+.checkbox{
+    position: relative;
+}
+.checkbox_input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.chk_label{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.chk_label:before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid silver;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.chk_label:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    background: url(../images/checked.png) no-repeat;
+    background-size: 12px 12px; 
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 2;  
+}
+.checkbox_input:checked + .chk_label:after{
+    opacity: 1;
+}
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px; 
+    background: #4488bb;
+    color: #ffffff;
+    transition: .4s;
+}
+.button:hover{
+    background: #fcac45;
+    color: black;
+    transition: background color .4s linear;
+>>>>>>> Stashed changes
 }
 table{
     border: 2px solid black;
