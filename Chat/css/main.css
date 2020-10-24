@@ -1,0 +1,28 @@
+*{
+
+}
+.body{
+    display: flex;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "head head"
+        "users mesages";
+    /*width: 800px auto;*/
+    background: orange;
+}
+.head{
+    background: palegreen;
+    grid-area: head;
+}
+.users{
+   background: purple;
+   grid-area: users;
+ }
+.mesages{
+    background: red;
+    grid-area:  mesages;
+}
