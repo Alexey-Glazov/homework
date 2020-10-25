@@ -9,7 +9,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-        "head head"
+        "head  head"
         "users mesages";
     /*width: 800px auto;*/
     background: orange;
