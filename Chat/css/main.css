@@ -36,8 +36,6 @@ body{
                         "avatar date name"
                         "avatar date txt" ;
     grid-template-columns: 50px 100px 1fr;
-    grid-template-rows: 1em 1fr;
-    grid-gap: 10px;
     background: rgb(19, 65, 2);
     grid-area:  message;
     padding-bottom: 10px;
@@ -50,7 +48,7 @@ body{
 }
 .date{
     grid-area: date;
-    background: rgb(5, 122, 111);
+    background: rgb(19, 65, 2);
     text-align: center;
     border-right: 2px solid white;
 }
@@ -58,10 +56,11 @@ body{
     grid-area: name;
     background: rgb(19, 65, 2);
     text-align: center;
+    padding: 10px;
 }
 .txt{
     grid-area:  txt;
-    background: rgb(50, 179, 3);
+    background: rgb(29, 107, 0);
     text-align: center;
     padding: 10px;
     border: 1px white;
