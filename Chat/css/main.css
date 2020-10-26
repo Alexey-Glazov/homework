@@ -45,9 +45,8 @@ body{
 .avatar{
     grid-area: avatar;
     background: rgb(58, 155, 2);
-    border-radius: 1000px;
-    padding: 20px;
-    max-height: 50px;
+    border-radius: 100%;
+    height: 50px;
 }
 .date{
     grid-area: date;
@@ -62,8 +61,9 @@ body{
 }
 .txt{
     grid-area:  txt;
-    background: rgb(41, 143, 5)
+    background: rgb(50, 179, 3);
     text-align: center;
+    padding: 10px;
     border: 1px white;
     border-radius: 10px;
 }
