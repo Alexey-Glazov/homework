@@ -1,28 +1,69 @@
-*{
-
-}
-.body{
-    display: flex;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans condenced', sans-serif;
+    color: white;
 }
 .wrapper{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.window{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-        "head  head"
-        "users mesages";
+        "head"
+        "chat";
+    grid-template-columns: 800px;
+    grid-template-rows: 70px 530px;
+    
     /*width: 800px auto;*/
     background: orange;
 }
 .head{
-    background: palegreen;
+    background: rgb(58, 155, 2);
     grid-area: head;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-.users{
-   background: purple;
-   grid-area: users;
- }
-.mesages{
-    background: red;
-    grid-area:  mesages;
+.chat{
+    grid-area: chat;
+    overflow: auto;
+}
+.message{
+    display: grid;
+    grid-template-areas: 
+                        "avatar date name"
+                        "avatar date txt" ;
+    grid-template-columns: 50px 100px 1fr;
+    grid-template-rows: 1em 1fr;
+    grid-gap: 10px;
+    background: rgb(19, 65, 2);
+    grid-area:  message;
+    padding-bottom: 10px;
+}
+.avatar{
+    grid-area: avatar;
+    background: rgb(58, 155, 2);
+    border-radius: 1000px;
+    padding: 20px;
+    max-height: 50px;
+}
+.date{
+    grid-area: date;
+    background: rgb(5, 122, 111);
+    text-align: center;
+    border-right: 2px solid white;
+}
+.name{
+    grid-area: name;
+    background: rgb(19, 65, 2);
+    text-align: center;
+}
+.txt{
+    grid-area:  txt;
+    background: rgb(41, 143, 5)
+    text-align: center;
+    border: 1px white;
+    border-radius: 10px;
 }
